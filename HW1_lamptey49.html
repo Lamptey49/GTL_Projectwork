@@ -8,29 +8,30 @@
 <body>
     <style>
         *{
-            font-family: Montserrat;
+            font-family: Arial, Helvetica, sans-serif;
             size:24px;
         }
         label{
             margin-top: 5px;
         }
-        form{
-            background-color:azure;
-        }
+        
         .center {
-            margin-top: 0;
-            margin-left: 250px;
+            background-color:rgb(242, 242, 241);
+            margin-top: 5px;
+            margin-left: 300px;
             margin-right: 70px;
-            width: 50%;
-            border: 3px solid none;
-            padding: 10px;
+            width: auto;
+            /* border: 3px solid none; */
+            padding: 1px;
             }
         input{
             width: 600px;
+            height: 20px;
             margin-bottom: 4px;
         }
         select{
-            width: 600px;
+            width: 609px;
+            height: 20px;
             margin-bottom: 4px;
         }
         textarea{
@@ -46,27 +47,24 @@
         }
     </style>
     <form class="center">
-        <div class="form-group">
+        
             <label>First Name</label><br>
-            <input type="text" placeholder="Your name.."/>
-        </div>
-        <div class="form-group">
+            <input type="text" placeholder="Your name.."/><br>
+
             <label>Last Name</label><br>
-            <input type="text" placeholder="Your last name.."/>
-        </div>
-        <div class="form-group">
+            <input type="text" placeholder="Your last name.."/><br>
+
             <label for="country">Country:</label><br>
             <select  name="country">
                 <option value="Australia">Australia</option>
                 <option value="Ghana">Ghana</option>
                 <option value="USA">USA</option>
                 <option value="Japan">Japan</option>
-            </select>
-        </div>
-        <div class="form-group">
+            </select><br>
+    
             <label>Subject</label><br>
-            <textarea rows="10" cols="30" placeholder="write something.."></textarea>
-        </div>
+            <textarea rows="10" cols="30" placeholder="write something.."></textarea><br>
+        
         <button type="submit">Submit</button>
     </form>
 </body>
