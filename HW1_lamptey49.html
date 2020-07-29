@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: Montserrat;
+            size:24px;
+        }
+        label{
+            margin-top: 5px;
+        }
+        form{
+            background-color:azure;
+        }
+        .center {
+            margin-top: 0;
+            margin-left: 250px;
+            margin-right: 70px;
+            width: 50%;
+            border: 3px solid none;
+            padding: 10px;
+            }
+        input{
+            width: 600px;
+            margin-bottom: 4px;
+        }
+        select{
+            width: 600px;
+            margin-bottom: 4px;
+        }
+        textarea{
+            width:600px;
+        }
+        button{
+            width: 70px;
+            height: 30px;
+            background-color: rgb(37, 216, 37);
+            color:white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <form class="center">
+        <div class="form-group">
+            <label>First Name</label><br>
+            <input type="text" placeholder="Your name.."/>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label><br>
+            <input type="text" placeholder="Your last name.."/>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label><br>
+            <select  name="country">
+                <option value="Australia">Australia</option>
+                <option value="Ghana">Ghana</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Subject</label><br>
+            <textarea rows="10" cols="30" placeholder="write something.."></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
