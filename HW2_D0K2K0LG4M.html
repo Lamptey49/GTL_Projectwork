@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Assignment</title>
+    
+</head>
+<body>
+    <button onclick="GetDate()">Get Date</button>
+    <p id="date"></p>
+    <script>
+        function GetDate(){
+            let date = new Date().toDateString();
+            date = document.getElementById('date');
+        }
+    </script>
+</body>
+</html>
