@@ -7,12 +7,20 @@
     
 </head>
 <body>
-    <button onclick="GetDate()">Get Date</button>
+    <style>
+        button{
+            cursor: pointer;
+            size:25px;
+            border-radius: 5px;
+            border: 1px blue solid;
+        }
+    </style>
+    <button onclick="GetDate()">GET DATE</button>
     <p id="date"></p>
     <script>
         function GetDate(){
-            let date = new Date().toDateString();
-            date = document.getElementById('date');
+            let date = new Date().toUTCString();
+           document.getElementById('date').innerHTML = date;
         }
     </script>
 </body>
